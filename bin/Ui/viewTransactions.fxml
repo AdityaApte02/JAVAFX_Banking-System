@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:controller="Ui.viewTransactions_Controller" 
+xmlns:fx="http://javafx.com/fxml/1">
+
+
+
+	<center>
+	
+	<VBox spacing="20">
+		
+		
+	<HBox spacing="20">
+	
+	<Label text="Enter the Customer Phone Number" alignment="center" 
+	 BorderPane.alignment="center"
+ style="-fx-border-width: 5">
+ 
+ <font>
+	<Font name="Times New Roman" size="20"></Font>
+	</font>
+ 
+ </Label>
+ 
+  <TextField fx:id="customer_phone" text="" onKeyReleased="#handleKeyReleased"></TextField>
+	
+	</HBox>
+	
+	
+	
+	<Button fx:id="submit_viewTransactions" text="View" onAction="#onButtonClicked">
+	
+	<padding>
+	<Insets top="20" right="20" bottom="20" left="20"></Insets>
+	</padding>
+	
+	</Button>
+	
+	
+	<Label fx:id="result" alignment="center" 
+	 BorderPane.alignment="center"
+ style="-fx-border-width: 5" >
+ <font>
+	<Font name="Times New Roman" size="20"></Font>
+	</font>
+ 
+ </Label>
+	
+	
+	</VBox>
+	
+	</center>
+	
+	<bottom>
+	<Button fx:id="exit" text="Exit" onAction="#onExit">
+	<padding>
+	<Insets top="20" right="20" bottom="20" left="20"></Insets>
+	</padding>
+	</Button>
+	</bottom>
+	
+		
+
+
+</BorderPane>
+

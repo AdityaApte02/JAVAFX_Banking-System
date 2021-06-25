@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.*?>
+
+
+<BorderPane fx:controller="Ui.MainPageController" 
+xmlns:fx="http://javafx.com/fxml/1">
+
+
+<top>
+<Label text="Welcome to Peaky Bank!!" alignment="CENTER" BorderPane.alignment="center"
+ style="-fx-text-fill:purple; -fx-border-width: 5">
+	<font>
+	<Font name="Times New Roman" size="30"></Font>
+	</font>
+
+</Label>
+</top>
+
+
+<left>
+
+	<VBox spacing="30">
+	
+	<padding>
+	<Insets bottom="20"></Insets>
+	</padding>
+	
+	<Button  fx:id="btn1" text="Add Branch" onAction="#onButtonClicked">
+
+</Button>
+
+<Button  fx:id="btn2" text="Add Customer" onAction="#onButtonClicked"> 
+ </Button>
+	
+<Button  fx:id="btn3" text="Add Amount" onAction="#onButtonClicked"></Button>
+
+<Button  fx:id="btn4" text="Withdraw Amount" onAction="#onButtonClicked"></Button>
+
+<Button  fx:id="btn5" text="Search for a Customer" onAction="#onButtonClicked"></Button>
+
+<Button  fx:id="btn6" text="Delete a customer" onAction="#onButtonClicked"></Button>
+<Button  fx:id="btn7" text="View Transactions" onAction="#onButtonClicked"></Button>
+
+<Button  fx:id="btn8" text="Exit" onAction="#onButtonClicked"></Button>
+	
+	</VBox>
+
+</left>
+
+
+
+
+</BorderPane>
+
